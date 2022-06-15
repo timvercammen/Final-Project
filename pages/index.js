@@ -1,11 +1,17 @@
 import React from "react";
+import Head from "next/head";
+import Carousel from "../components/Carousel";
 
 const index = () => {
   return (
-    <div>
-      <h1>Index</h1>
-      <h3>Photography</h3>
-    </div>
+    <>
+      <Head>
+        <title>AG Photography | home</title>
+      </Head>
+      <div className="carousel">
+        <Carousel />
+      </div>
+    </>
   );
 };
 

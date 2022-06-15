@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import "./admin.scss";
+@import "./carousel.scss";
+
+body {
+  background: #f2f2f2;
+  color: #333;
+  font-family: "Noto Sans", "Poppins", sans-serif;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+nav {
+  margin: 20px auto;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  margin-left: 12px;
+}
+
+nav .title {
+  margin-right: auto;
+  font-size: 20px;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+  border-top: 1px solid #eaeaea;
+}
+
+.carousel {
+  height: 75vh;
+  width: 80%;
+  margin: 0 auto;
+  border: 0.5px solid black;
+}
+
+.selector {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  &__btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 100px;
+    color: black;
+    background-color: white;
+    outline: none;
+    border: 0.5px solid black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 0.5px solid white;
+    padding: 10px;
+    font-size: 12px;
+    &__text {
+      font-size: 14px;
+    }
+    &:hover {
+      font-weight: bold;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+    &.isActive {
+      background-color: black;
+      color: white;
+    }
+  }
+  &__btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 100px;
+    color: black;
+    background-color: white;
+    border: 0.5px solid black;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 0.5px solid white;
+    padding: 10px;
+    font-size: 12px;
+    &__text {
+      font-size: 14px;
+    }
+    &:hover {
+      font-weight: bold;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+    &.isActive {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-between;
+  border: 1px solid red;
+
+  &__card {
+    // display: flex;
+    // flex-direction: column;
+    width: 49%;
+    height: auto;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    &__img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    &__title {
+      font-size: 20px;
+      margin-left: 20px;
+    }
+  }
+}
