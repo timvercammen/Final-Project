@@ -1,12 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/bootstrap";
 @import "./admin.scss";
 @import "./carousel.scss";
+@import "./modal.scss";
+@import "./editImg.scss";
+@import "./dropzone.scss";
 
 body {
-  background: #f2f2f2;
+  background: #ebebeb;
   color: #333;
   font-family: "Noto Sans", "Poppins", sans-serif;
+  height: 100vh;
+  margin: 10px;
+  padding: 0;
 }
 
 a {
@@ -20,12 +28,12 @@ a {
 }
 
 nav {
-  margin: 20px auto;
-  padding: 10px 0;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   border-bottom: 1px solid #ddd;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 nav a {
@@ -40,16 +48,16 @@ nav .title {
 footer {
   display: block;
   text-align: center;
-  margin-top: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
   color: #777;
   border-top: 1px solid #eaeaea;
 }
 
 .carousel {
-  height: 75vh;
-  width: 80%;
+  height: auto;
+  width: 70%;
   margin: 0 auto;
-  border: 0.5px solid black;
 }
 
 .selector {
@@ -117,16 +125,14 @@ footer {
   }
 }
 
-.container {
+.containermap {
   display: flex;
   flex-wrap: wrap;
   height: auto;
   justify-content: space-between;
-  border: 1px solid red;
+  margin-top: 60px;
 
   &__card {
-    // display: flex;
-    // flex-direction: column;
     width: 49%;
     height: auto;
     border: 1px solid black;
@@ -140,5 +146,109 @@ footer {
       font-size: 20px;
       margin-left: 20px;
     }
+  }
+}
+
+.travelImgs {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    & h1 {
+      margin-bottom: 30px;
+    }
+
+    & p {
+      font-size: 15px;
+      width: 60%;
+    }
+  }
+  &__wrapper {
+    &__wrapper-images {
+      margin-bottom: 20px;
+      &__image {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+        &:hover {
+          filter: opacity(0.8);
+        }
+      }
+    }
+  }
+}
+
+.about-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  & h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  & img {
+    width: 80%;
+    height: auto;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  & p {
+    width: 80%;
+    height: auto;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .containermap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    &__card {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
+
+  .travelImgs {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    padding-bottom: 15px;
+  }
+
+  nav .title {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .carousel {
+    height: auto;
+    width: 95%;
+    margin: 0 auto;
   }
 }

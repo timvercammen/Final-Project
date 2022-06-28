@@ -1,0 +1,30 @@
+.uploadField {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-between;
+}
+.itemList {
+  list-style: none;
+}
+
+.dropzone {
+  height: 2rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 1rem;
+  border: 2px dashed #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.item {
+  margin-right: 10px;
+}
+
+.active {
+}

@@ -1,8 +1,7 @@
 import React from "react";
 import db, { nest } from "../../db";
 
-const List = ({ travels }) => {
-  console.log({ travels });
+const TravelList = ({ travels }) => {
   return (
     <div>
       <main>
@@ -51,4 +50,4 @@ const List = ({ travels }) => {
   );
 };
 
-export default List;
+export default TravelList;

@@ -1,0 +1,19 @@
+#dropZone {
+  max-height: 80vh;
+  min-height: 200px;
+  overflow: scroll;
+  margin-bottom: "20px";
+
+  .dropArea {
+    min-height: 200px;
+    border: 2px dashed grey;
+    cursor: pointer;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .dropListRow {
+  }
+}

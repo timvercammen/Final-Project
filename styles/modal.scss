@@ -1,0 +1,141 @@
+.modalBg {
+  background-color: #999;
+  display: flex;
+  &__modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px #333;
+    background-color: white;
+    z-index: 1;
+    &__title {
+      flex: 10%;
+      display: inline-block;
+      text-align: center;
+      margin-left: 45px;
+      margin-right: 45px;
+      border-bottom: 1px solid #777;
+    }
+    &__closeBtn {
+      flex: 5%;
+      height: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      &__btn {
+        border: none;
+        font-size: 20px;
+        margin-top: 15px;
+        margin-right: 15px;
+        cursor: pointer;
+        &:hover {
+          font-size: 25px;
+        }
+      }
+    }
+    &__form {
+      flex: 75%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      &__details {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 100%;
+        margin-bottom: 20px;
+      }
+      &__drop {
+        width: 65%;
+        height: 100%;
+      }
+    }
+    &__footer {
+      flex: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 45px;
+      margin-right: 45px;
+      border-top: 1px solid #777;
+    }
+
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__field {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+      }
+    }
+
+    span.item {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    &__title {
+      display: inline-block;
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.ImgModal {
+  display: flex;
+  flex-direction: column;
+  &__modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: #333;
+    &__closeBtn {
+      display: flex;
+      height: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      &__btn {
+        border: none;
+        font-size: 20px;
+        margin-right: 25px;
+        color: aliceblue;
+        background-color: transparent;
+        cursor: pointer;
+        &:hover {
+          font-size: 15px;
+        }
+      }
+    }
+    &__img {
+      display: flex;
+      justify-content: center;
+      & img {
+        width: 70%;
+        height: auto;
+      }
+    }
+  }
+}
